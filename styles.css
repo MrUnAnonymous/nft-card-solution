@@ -1,0 +1,156 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    /* PRIMARY */
+    --soft-blue: hsl(215, 51%, 70%);
+    --cyan: hsl(178, 100%, 50%);
+
+    /* NEUTRAL */
+    --very-dark-blue: hsl(217, 54%, 11%);
+    --dark-blue: hsl(216, 50%, 16%); /*card*/
+    --blue: hsl(215, 32%, 27%); /*line*/
+    --white: hsl(0, 0%, 100%);
+}
+
+body {
+    background-color: var(--very-dark-blue);
+    font-family: "Outfit", "sans-serif";
+    font-weight: 400;
+    font-size: 18px;
+    display: grid;
+    place-content: center;
+    min-height: 100vh;
+}
+
+h1 {
+    font-weight: 600;
+    padding: 20px 0 0 0;
+    font-size: 18px;
+    color: var(--white);
+}
+
+h1:hover {
+    cursor: pointer;
+    color: var(--cyan);
+}
+
+.etherium {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 12px;
+    color: var(--white);
+    padding-bottom: 20px;
+}
+
+.duration {
+    display: flex;
+    justify-content: center;
+    gap: 4px;
+    font-size: 14px;
+}
+
+.eth{
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+}
+
+.eth span {
+    font-size: 14px;
+    color: var(--cyan);
+    font-weight: 500;
+}
+
+.overlay {
+    opacity: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    background-color: #00FFF7AA;
+    transition: opacity 0.3s ease-in-out;
+    border-radius: 10px;
+}
+
+.overlay:hover {
+    opacity: 1;
+    cursor: pointer;
+}
+
+.image-container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image {
+    border-radius: 10px;
+    height: 260px;
+    width: 260px;
+    background-image: url(images/image-equilibrium.jpg);
+    background-size: contain;
+}
+
+.image:hover {
+    cursor: pointer;
+}
+
+.card {
+    border-radius: 10px;
+    height: auto;
+    width: 300px;
+    background-color: var(--dark-blue);
+    padding: 20px;
+}
+
+.details p {
+    color: var(--soft-blue);
+    font-size: 15px;
+    font-weight: 300;
+    padding: 20px 0 0 ;
+}
+
+.footer {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.footer img{
+    width: 30px;
+    height: 30px;
+    border: 1px whitesmoke solid;
+    border-radius: 50%;
+}
+
+hr {
+    border: 0.5px solid var(--blue);
+}
+
+.footer h3 {
+    margin-left: 15px;
+    font-size: 14px;
+    color: var(--soft-blue);
+    font-weight: 200;
+}
+
+.name {
+    font-weight: 400;
+    color: var(--white);
+}
+
+.name:hover {
+    cursor: pointer;
+    color: var(--cyan);
+}
